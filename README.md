@@ -19,14 +19,14 @@ JSON parsing and stringifying nano-sched plugin
 ## Functions
 
 
-### json.parse
+### json.parse(log, data)
 
-Converts `{ encoding:'utf8', content: '...' }` into `{ encoding:'json', content: Object }`.
+Converts `{ encoding:'utf8', content: '{ a: 1}' }` into `{ encoding:'json', content: { a: 1 } }`.
 
 
-### json.stringify
+### json.stringify(log, data)
 
-Converts `{ encoding:'json', content: Object }` into `{ encoding:'utf8', content: '...' }`.
+Converts `{ encoding:'json', content: { a: 1 } }` into `{ encoding:'utf8', content: '{ a: 1 }' }`.
 
 
 [bithound-image]: https://www.bithound.io/github/Holixus/nano-sched-json/badges/score.svg
